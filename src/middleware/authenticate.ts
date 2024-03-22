@@ -1,5 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
+import { ErrorResponse } from "../utils/responses";
 import { User } from '../models/user';
 
 interface AuthRequest extends Request {
@@ -24,6 +25,6 @@ export const authenticate = async (req: AuthRequest, res: Response, next: NextFu
         req.user = user;
         next();
     } catch (e) {
-        res.status(401).send({ error: 'Please authenticate.' });
+        return ErrorResponse(res, 401, 'Please authenticate.', e);
     }
 };
