@@ -26,7 +26,6 @@ run docker container: `docker run -p 3000:3000 store-api`
 ## Testing
 Run `npm test` 
 
-## Submission
+## Links
 1. Link to live API [here](https://store-api-latest.onrender.com)
 2. Link to Postman documentation [here](https://documenter.getpostman.com/view/12483379/2sA35A85Vf)
-3. Link to Github repository [here](https://github.com/esiebomaj/Store-api)
