@@ -1,5 +1,4 @@
-# Mainstack Store API
-API documentation for Mainstack backend test 
+# Store API
 A simple RESTful API to create and manage products in a store with token-based authentication
 
 ## Features
